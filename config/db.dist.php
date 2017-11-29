@@ -5,7 +5,7 @@ $app['pdo.options'] = [
     'password' => '',
     'host'     => 'localhost',
     'dbname'   => 'dbname',
-    'sgbdr'    => 'mysql',
+    'dbms'    => 'mysql',
     'charset'  => 'utf8'
 ];
 

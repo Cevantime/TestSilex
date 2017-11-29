@@ -59,7 +59,7 @@ $app['users.dao'] = function($app) {
 
 $app['pdo'] = function($app) {
     $options = $app['pdo.options'];
-    return new \PDO("{$options['sgbdr']}://host={$options['host']};dbname={$options['dbname']};charset={$options['charset']}",
+    return new \PDO("{$options['dbms']}://host={$options['host']};dbname={$options['dbname']};charset={$options['charset']}",
             $options['username'], 
             $options['password'], 
             array(
